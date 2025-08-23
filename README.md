@@ -1,20 +1,22 @@
-# 🌤️ Largo Weather KPIs
+# ☀️🌡️ Largo Weather KPI Dashboard
 
-This project analyzes and visualizes weather data for Largo (Florida), using data from the [Open-Meteo API](https://open-meteo.com) and interactive dashboards in Looker Studio.
+Short, focused climate analytics for Largo, Florida (Summer 2025).  
+I fetch hourly data from the **Open-Meteo API**, compute practical KPIs, and publish an interactive **Looker Studio** dashboard. This repo contains the data snapshots, charts, and the reproducible notebook.
 
 ---
 
 ## 📂 Data
-- **Source**: Open-Meteo API  
-- **Period covered**: last 5 weeks  
-- **Key variables**: apparent temperature, humidity, heat index, rain probability  
+- **Source:** Open-Meteo API (hourly)
+- **Period:** last ~5 weeks
+- **Fields:** apparent_temperature, relative_humidity_2m, precipitation_probability, time
+- Snapshots are in [`/data`](data) and preview charts in [`/figs`](figs).
 
 ---
 
 ## 📊 Main KPIs
-1. % of hours with Heat Index ≥ 100°F per month  
-2. Number of days with Rain Probability ≥ 60%  
-3. Comfort windows (apparent temperature 68°F–82°F) by time of day  
+1. **% of hours with Heat Index ≥ 100°F** (by month)  
+2. **% of days with Rain Probability ≥ 60%** (overall)  
+3. **Comfort windows by time of day** (72–90°F and RH < 70%)
 
 ---
 
@@ -32,34 +34,41 @@ See details in [`data/kpi_comfort_by_timeblock.csv`](data/kpi_comfort_by_timeblo
 ### Chart Previews
 ![Heat Index per Month](figs/kpi1_heatindex_line.png)  
 ![Comfort by Time Block](figs/kpi3_comfort_bar.png)  
-![Last 7 Days — Apparent Temperature](figs/temp_last7days.png)  
-
----
-
-## 📈 Visualization Examples
-![Heat Index Evolution](charts/heat_index_line.png)  
-*Heat Index evolution per hour — last 5 weeks*
-
-![Comfort Windows](charts/comfort_bars.png)  
-*Comfort windows by time of day*
+![Last 7 Days — Apparent Temperature](figs/temp_last7days.png)
 
 ---
 
 ## 🌐 Interactive Dashboard
-👉 [Largo Weather KPIs — Live Dashboard](https://lookerstudio.google.com/your-link-here)
+👉 **Live report:** _paste your Looker Studio link here_
 
 ---
 
-## 🚀 Technologies
-- Python (requests, pandas, matplotlib)  
-- Google Colab  
-- GitHub  
-- Looker Studio  
+## ⚙️ How to Reproduce
+1. Open the notebook in Google Colab (`notebooks/` or your main `.ipynb`).  
+2. Run cells in order:
+   - `0_setup` → create folders and imports  
+   - `1_fetch_data` → call Open-Meteo and save `data/largo_hourly.csv`  
+   - `2_prepare` → feature engineering + KPI flags  
+   - `3_kpis` and `3_plots` → KPIs + charts  
+   - `4_exports` → write CSVs and README snippet  
+3. Re-run after any kernel reset.
+
+---
+
+## 🧰 Tech Stack
+Python (pandas, matplotlib, requests), Google Colab, GitHub, Looker Studio.
+
+---
+
+## 🚀 Next Steps
+- Add precipitation vs. comfort analysis  
+- Automate daily refresh  
+- Compare cities (Tampa, St. Pete, Miami)
 
 ---
 
 ## 👤 Author
-Project by Daniel Acosta (https://www.linkedin.com/in/danyacosta)  
+Your Name — Daniel Acosta(https://www.linkedin.com/in/danyacosta/)
 
  
         
