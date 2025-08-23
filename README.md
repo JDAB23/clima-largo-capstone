@@ -39,7 +39,7 @@ See details in [`data/kpi_comfort_by_timeblock.csv`](data/kpi_comfort_by_timeblo
 ---
 
 ## 🌐 Interactive Dashboard
-👉 **Live report:** _paste your Looker Studio link here_
+👉 **Live report:** https://lookerstudio.google.com/reporting/c3df8824-842c-4662-b9a0-e35ffac5ccb8
 
 ---
 
