@@ -18,7 +18,8 @@ This project analyzes and visualizes weather data for Largo (Florida), using dat
 
 ---
 
-## Results (Auto-generated snapshot)
+## 📊 Results (Auto-generated snapshot)
+
  ## Preliminary Results
 
 **KPI1 — % of hours with Heat Index ≥100°F**
