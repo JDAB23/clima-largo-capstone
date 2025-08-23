@@ -18,6 +18,25 @@ This project analyzes and visualizes weather data for Largo (Florida), using dat
 
 ---
 
+## Results (Auto-generated snapshot)
+ ## Preliminary Results
+
+**KPI1 — % of hours with Heat Index ≥100°F**
+month
+2025-07-01    25.0
+2025-08-01    11.1
+
+**KPI2 — % of days with rain probability ≥60%**
+Overall: 10.8%
+
+**KPI3 — % of comfort hours by time block**
+time_block
+morning      5.4
+afternoon    0.9
+night        8.6
+
+---
+
 ## 📈 Visualization Examples
 ![Heat Index Evolution](charts/heat_index_line.png)  
 *Heat Index evolution per hour — last 5 weeks*
