@@ -20,21 +20,19 @@ This project analyzes and visualizes weather data for Largo (Florida), using dat
 
 ## 📊 Results (Auto-generated snapshot)
 
- ## Preliminary Results
+**KPI1 — % of hours with Heat Index ≥100°F (by month)**  
+See details in [`data/kpi_hours_HI100_per_month.csv`](data/kpi_hours_HI100_per_month.csv)
 
-**KPI1 — % of hours with Heat Index ≥100°F**
-month
-2025-07-01    25.0
-2025-08-01    11.1
+**KPI2 — % of days with rain probability ≥60% (overall)**  
+See [`data/kpi_days_rain60.csv`](data/kpi_days_rain60.csv)
 
-**KPI2 — % of days with rain probability ≥60%**
-Overall: 10.8%
+**KPI3 — % of comfort hours by time block**  
+See details in [`data/kpi_comfort_by_timeblock.csv`](data/kpi_comfort_by_timeblock.csv)
 
-**KPI3 — % of comfort hours by time block**
-time_block
-morning      5.4
-afternoon    0.9
-night        8.6
+### Chart Previews
+![Heat Index per Month](figs/kpi1_heatindex_line.png)  
+![Comfort by Time Block](figs/kpi3_comfort_bar.png)  
+![Last 7 Days — Apparent Temperature](figs/temp_last7days.png)  
 
 ---
 
